@@ -1,0 +1,135 @@
+
+body {
+    background-color: #adc178;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body :not(h1, strong, i, u, del, blockquote) {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    background-color: #6c584c;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1%;
+    color: #eec3a2;
+    border: 3px solid #4d301f;
+}
+
+#índice {
+    writing-mode: vertical-lr;
+    width: 0px;
+    text-align: center;
+    font-size: xx-large;
+    transform: rotate(180deg);
+    padding-right: 0%;
+}
+
+img {
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.separado{
+    background-color: #ddf0aa;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#ImagenCentrada {
+    text-align: center;
+}
+
+table , td, tr{
+    width: 100%;
+    margin-top: 5%;
+    padding: 0%;
+}
+
+blockquote {
+    background-color: #91ac46;
+    padding: 4%;
+    margin-left: 400px;
+    margin-right: 400px;
+    font-size: x-large;
+}
+
+#AutorCita {
+    text-align: center;
+    margin-left: 40%;
+}
+
+#lista5 {
+    counter-reset: li; 
+    list-style: none; 
+    list-style: decimal; 
+    font: 20px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+}
+
+#lista5 {
+    list-style-type: none;
+
+     
+    margin: 0;
+    padding: 0;
+    counter-reset: li-counter;
+    
+}
+
+#lista5 > li{
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 1%;
+    background-color: #e3ffaf;
+    border-radius: 5px;
+    padding-left: 50px;
+    border: 1px solid rgb(53, 77, 10);
+}
+
+#lista5 > li:before {
+    position: absolute;
+    top: -0.3em;
+    left: -0.5em;
+    width: 1.8em;
+    height: 1.2em;
+     
+    font-size: 1.4em;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: #eec3a2;
+    background-color: #6c584c;
+    border: 2px solid #4d301f;
+    border-radius: 10%;
+     
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    z-index: 99;
+    overflow: hidden;
+     
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+#lista5 > li:hover {
+    background-color: #91ac46;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+#lista5 > li {
+    transition: transform 0.2s;
+}
